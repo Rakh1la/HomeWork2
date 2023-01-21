@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <title>Registration</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Registration</a>
+      <a href="/Login.html">Login</a>
+    </nav>
+    <form>
+      <h1>Register Form</h1>
+      <h4>Please, fill out form values</p>
+
+      <fieldset>
+        <legend>User Info</legend>
+        <br /><label for="firstname">
+          Enter your firstname: <input required type="text" id="firstname" />
+        </label>
+        <hr />
+        <br /><label for="lastname"
+          >Enter your lastname: <input required type="text" id="lastname" />
+        </label>
+        <hr />
+        <br /><label for="password"
+          >Enter your password:
+          <input required type="text" id="password" pattern="" />
+        </label>
+      </fieldset>
+      <hr />
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male"
+          ><input required type="radio" id="male" name="gender" /> Male</label
+        >
+        <label for="female"
+          ><input required type="radio" id="female" name="gender" />
+          Female</label
+        >
+      </fieldset>
+      <hr />
+      <fieldset>
+        <legend>City</legend>
+        <select required name="city" id="">
+          <option value="astana">Astana</option>
+          <option value="shymkent">Shymkent</option>
+          <option value="almaty">Almaty</option>
+          <option value="taraz">Taraz</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+      <hr />
+      <fieldset>
+        <legend>Extra info:</legend>
+        <input
+          type="tel"
+          id="phone"
+          inputmode="tel"
+          placeholder="Phone number:"
+        />
+        <input required type="text" inputmode="email" placeholder="Email:" />
+        <input
+          required
+          type="text"
+          inputmode="password"
+          placeholder="Password:"
+        />
+      </fieldset>
+      <hr />
+      <fieldset><input type="checkbox" checked="" /> Done!</fieldset>
+      <hr />
+      <fieldset>
+        <input type="file" />
+
+        <button type="submit">Submit</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

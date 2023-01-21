@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Login</a>
+      <a href="/Main.html">Main</a>
+    </nav>
+    <main>
+      <h1>Login</h1>
+
+      <form id="login-form" method="get">
+        <fieldset>
+          <br />
+          <input
+            required
+            type="text"
+            inputmode="email"
+            name="email"
+            placeholder="Email:"
+          />
+          <hr />
+          <br />
+          <input
+            required
+            type="text"
+            inputmode="password"
+            name="password"
+            placeholder="Password:"
+            form="login-form"
+          />
+          <hr />
+          <br />
+          <button type="submit" form="login-form">Login</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
